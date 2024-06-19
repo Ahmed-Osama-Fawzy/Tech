@@ -1,0 +1,40 @@
+- To Install
+-- npm install pug
+-- npm install pug-cli -g
+
+- To Watch Files
+-- pug "Source Directory" -w
+
+- To Change Distnation 
+-- pug "Source Directory" -w -o "Distnation Directory"
+
+- To Change Html Structure to brety
+-- pug "Source Directory" -w -P
+-- pug "Source Directory" -w -P -o "Distnation Directory"
+
+- The Mixins
+-- use for Piece of Code Repeated more one Time
+-- Can Use Argurmnt to be more dynamic
+
+- The Include
+-- Use for Use The Content of another page with out ability to edit at install
+
+- The extends 
+-- Use for Make Related Copy of page to another 
+
+- The Block
+-- Use more with the extends
+-- Use to Change from page to another
+-- Block append Block_Name
+--- to Append new text at the exists text 
+-- Block prepned Block_Name
+--- to Prepend new text at the exists text
+
+- The Case , When , default , break
+-- Using as If Condtion at only one Arguement 
+-- can use '- break' to skip the Code
+-- default for the outliers values
+
+- For , var , while 
+-- Using Some JS code to be more Power Full
+-- put '-' before the code to be knownen

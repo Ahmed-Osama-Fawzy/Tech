@@ -1,0 +1,107 @@
+//- Using Js Variable at this pug file
+- var JsVar1 = 'Ahmed Osama' 
+//- The Mixin Making
+mixin SkillList
+    ul 
+        li Html 
+        li Css 
+        li JS 
+        li Sass 
+        li Pug 
+        li Gulp 
+        li Bootstrap 
+        li React 
+doctype
+html(len="en")
+    head
+        meta(charset="utf-8")
+        //- Include Contect of another file
+        include includes/js.pug
+        include includes/css.pug
+        block HeadContent 
+            title Main Page
+    body
+        block Info 
+            div This is main Page
+        block PageContent
+            h1 The First Header
+            div 
+                //- The attribute of the element
+                a(href="")
+            
+            div: a(href="")
+            // Html Comment
+            //- Pugjs Comment
+            //
+                Mulite
+                Lines 
+                of html
+                Comments
+            //-
+                Mulite
+                Lines 
+                of pugjs
+                Comments
+            div
+                | i love
+                b my
+                | self
+                b so
+                | much
+            |
+            |
+            .  
+                Text from main body
+            div(class="main-div main-parent", id="xdiv",Creator=JsVar1)
+            p.main-paragaph 
+            span#main-span 
+            .short-had-class 
+            #short-hand-id 
+            form(action="POST")
+                label(for="")
+                input(type="text")  
+            div(style="color:red;background-color:black")
+            div(style={'color':'red','background-color':'black'})
+            span The Creator of this file is #{JsVar1}
+            p ppp<b>ppp</b>pppppp 
+            p= 'ppp<b>ppp</b>ppp'
+            
+            //-Making Loop using JS
+            ul
+                - for (var i = 0 ; i < 10 ; i++)
+                li Item Num #{i}
+            
+            //- Using Each to loop at items
+            - var array = ["Html" , "Css" , "JS"]
+            each Item , Index in array 
+                |
+                |
+                span Item is #{array[Index].toUpperCase()}
+                |
+                |
+                span Item is #{array[Index].toLowerCase()}
+                |
+                |
+                span Item is \#{array[Index].toLowerCase()}
+           
+            //- Using The Mixin
+            +SkillList 
+           
+            //- Using Imported Mixins
+            include includes/Mixins.pug
+           
+            //- Using Arguemnted Mixin
+            +SkillsList("Sass")
+           
+            //- The Case 'Switch Case'
+            - var z = 4
+              case z 
+                when 0
+                    p  Have No Friends
+                when 1
+                when 2
+                    p  Have Some Friends 
+                when 3
+                    - break
+                default 
+                    p  Have More Than 4 Friends

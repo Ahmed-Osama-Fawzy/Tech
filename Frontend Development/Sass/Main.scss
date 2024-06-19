@@ -1,0 +1,255 @@
+// Import Content of another page
+@use './page.scss' as *;
+
+// Using The Imported Content
+.Max{
+    color: $XColor;
+    @include Power();
+}
+
+// The Vaialbes at sass
+$main_color: red;
+$primary_color :blue;
+.h1{
+    color: $main_color;
+}
+.h2{
+    $main_color: green;
+    color: $main_color; // green , So it is defined at it scpoe
+}
+.h3{
+    $main_color: yellow !global;
+    color: $main_color; // declear the global value
+}
+.h4{
+    color: $main_color; // yellow
+    margin: 10px;
+}
+body{
+    padding: 50px;
+    // Nesting 
+    &::after{
+        content: "";
+    }
+    &::before{
+        content: "";
+    }
+    &:hover{
+        color: aqua;
+    }
+    .child{
+        color: azure;
+        .grand-child{
+            color: blueviolet;
+        }
+    }
+    &.parent{
+        color: cadetblue;
+    }
+    > .big{
+        color: chartreuse;
+    }
+    &[title="ali"]{
+        color: darkolivegreen;
+    }
+    .big,
+    .small{
+        color: darkcyan;
+        .median{
+            color: ghostwhite;
+        }
+    }
+    // Properties Nesting
+    padding:{
+        top :10px;
+        left: 20px;
+        bottom: 30px;
+        right: 40px;
+    }
+    font:{
+        size: 20px;
+        weight:bold;
+    }
+}
+// Make Fixed part of code
+// Using it by @extends
+%main_structure{
+    color: azure;
+    background-color: red;
+    font-size: x-large;
+}
+span{
+    @extend %main_structure;
+    padding: 20px;
+}
+span.h{
+    padding: 20px;
+    @extend %main_structure;
+}
+span.a{
+    padding-top: 20px;
+    @extend %main_structure;
+    padding-left: 20px;
+}
+$theme : "dark";
+$radius : false;
+.page{
+    // The Contol Flow 
+    @if $theme == "light"{
+        background-color: azure;
+        color: black;
+    }@else if $theme == "Mid"{
+        background-color: rgb(113, 122, 122);
+        color: rgb(128, 0, 0);
+    }@else{
+        background-color: black;
+        color: azure;
+    }
+    // The Short-hand for Control Flow
+    padding: if($radius,10px,20px);
+}
+$Direction : "rtl";
+$main_padding: 10px;
+// The Non-Paramterd Mixin
+@mixin Circel(){
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+// The Paramterd Mixin
+@mixin Rectancle($width,$height){
+    width: $width;
+    height: $height;
+}
+h1{
+    // The Inerpolation
+    direction: #{$Direction};
+    padding:#{$main_padding+10};
+    // Using Mixins
+    @include Circel();
+    @include Rectancle(10px, 5px)
+}
+// Sass Comment
+/* Css Comment */
+
+// The Loop Using for
+/* First Loop Shape */
+@for $i from 1 to 10{
+    .Class-#{$i}{
+        border-radius: #{10+$i};
+    }
+}
+/* Second Loop Shape */
+@for $i from 1 through 10{
+    .Class-#{$i}{
+        border-radius:#{10+$i};
+    }
+}
+/* Third Loop Shape */
+$dimi: 0;
+@for $j from 1 to 11{
+    .Class-#{$j}{
+        border-radius:#{10+$dimi};
+    }
+    $dimi: $dimi + $j
+}
+
+// The Each
+$classes1: "Facebook" , "Instgram" , "Twitter" ; // 1 Paramter
+$classes2: "Facebook" Blue , "Youtube" Red , "Github" Black ; // 2 Paramter
+$classes3:"One" 10px Black , "Two" 15px Gray , "Three" 20px Blue; // 3 Paramter 'Destructering'
+
+/* Using Each with 2 Paramter */
+@each $Item in $classes1{
+    .#{$Item}::after{
+        content: '#{$Item}';
+        font-size: x-large;
+    }
+}
+
+/* Using Each with 2 Paramter */
+@each $Item , $Color in $classes2{
+    .#{$Item}::after{
+        content: '#{$Item}';
+        font-size: x-large;
+        color: $Color;
+    }
+}
+
+
+/* Using Each with 3 Paramter */
+@each $Item , $Size , $Color in $classes3{
+    .#{$Item}::after{
+        content: '#{$Item}';
+        font-size: $Size;
+        color: $Color;
+    }
+}
+
+/* The Loop with While */
+$u:0;
+@while $u <= 10{
+    .class-#{$u}{
+        width: #{100px + $u};
+        height: #{100px + ($u/2)};
+    }
+    $u: $u +1;
+} 
+
+// The Function with Arguments
+@function Half($Size){
+    @return ($Size/2);
+}
+
+// The Function with Rest Argument
+@function Sum($Sizes...){
+    $Total:0;
+    @each $Size in $Sizes{
+        $Total: $Total + $Size;
+    }
+    @return $Total;
+}
+
+.class-x{
+    // Using The Function
+    width: Sum(100px,200px,300px);
+    height: Half(Sum(100px,200px,300px));
+}
+
+// @content
+@mixin MediaSizes($Device){
+    @if $Device == Mini{
+        @media (max-width: 768px){
+            @content;
+        }
+    }@else if $Device == Small{
+        @media (min-width: 767px) and (max-width : 899px){
+            @content;
+        }
+    }@else if $Device == Medium{
+        @media (min-width: 900px) and (max-width : 1199px){
+            @content;
+        }
+    }@else if $Device == Large{
+        @media (min-width: 1200px){
+            @content;
+        }
+    }
+}
+
+.master{
+    @include MediaSizes(Mini){
+        color: azure;
+    }
+    @include MediaSizes(Small){
+        color: aquamarine;
+    }
+    @include MediaSizes(Medium){
+        color: rgb(127, 255, 133);
+    }
+    @include MediaSizes(Large){
+        color: rgb(255, 127, 217);
+    }
+}

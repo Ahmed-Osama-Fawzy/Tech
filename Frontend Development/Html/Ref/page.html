@@ -1,0 +1,455 @@
+<!-- 
+    -Html => Hyper Text Markup Language
+    -<!doctype html> = > for define this doucment is html documnet 
+    -<html> => have the full structure of the page hiden and visialble
+    -<head> => have meta data which is unavaliable in html page view
+    -<body> => the structre of the documnet which view in the browser
+    -css file can be one of three
+        Very important 1- inline => at the style atrribute of the tags
+        important 2- Internal => at the head on style tag
+        Normal 3- External => at seprated css file linked by <Link> tag
+    -rel the attr of the link can have stylesheeet for css or icon for the webpage icon
+    -each can have more than 1 class but obly one id
+    -the id is a unique idintifier so that is must not repeated
+    -js file can be one of three
+        Very important 1- inline => at the style atrribute of the tags
+        important 2- Internal => at the end of body on script tag
+        Normal 3- External => at seprated js file linked by <Link> tag
+    -&entity_name; or &#entity_number;&#128514 => for emojes;
+    - b for bold text , strong for importanat bold text 
+    - i for italic text , em for importanat italic text 
+    -mailto: at the hrep attr of the a tag
+    -a have href , target ,  
+    -img have src , height , width ,  alt , 
+    -all have style , title ,
+    -blockqoute have cite ,
+    -Notes:
+        1- if the tags not closed  this is ok for the lastest versions
+        2- html non sencative for the tags names
+-->
+<!doctype html>
+<!-- the main tag in page  -->
+<html>
+    <!-- the heading hideen tag  -->
+    <head>
+        <meta charset="UTF-8">
+        <!-- the title of page  -->
+        <title>Html page</title>
+        <!-- this meta for mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- the text under the title  -->
+        <!-- if it is one word could be writen with out double coutes  -->
+        <meta name="description" content="this is a good page in egypt">
+        <meta name="author" content="John Doe">
+        <!-- to build inside is  -->
+        <script></script>
+        <!-- to build inside css  -->
+        <style media="print">
+            .div1 {
+                color: purple;
+            }
+        </style>
+        <!-- to link bettwen html and css pages   -->
+        <link rel="stylesheet" href="RE_CSS-SASS/page.css" media="(min-width: 1000px ) and (max-width : 1400px )">
+        <link rel="stylesheet" href="RE_CSS-SASS/page.css" media="print">
+    </head>
+    <!-- the body in page  -->
+
+    <body>
+        <!-- sizes of heading  -->
+        <h1>AHMED</h1>
+        <h2>AHMED</h2>
+        <h3>AHMED</h3>
+        <h4>AHMED</h4>
+        <h5>AHMED</h5>
+        <h6>AHMED</h6>
+
+
+        <!-- the id  -->
+        <p id="agg">AHMED</p>
+        AHMED
+
+        <!-- the class  -->
+        <p class="vhv">AHMED</p>
+
+        <!-- the hideing  -->
+        <p hidden>AHMED</p>
+
+        <!-- italic text  -->
+        <p>fff<i>gggg</i>gggg</p>
+
+        <!-- italic - important text  -->
+        <p>ffGS<em>hhh</em>kkk</p>
+
+        <!-- bold text  -->
+        <p>rrr<b>qqq</b>ttt</p>
+
+        <!-- bold - imporratant text  -->
+        <p>aaa<strong>ooo</strong>ppp</p>
+
+        <!-- marked text  -->
+        <p>zzz<mark>assd</mark>llll</p>
+
+        <!-- smaller text  -->
+        <p>kkk<u>sss</u>iii</p>
+
+        <!-- smaller textb  -->
+        <p>aaa<small>rrr</small>vvv</p>
+
+        <!-- deleted text  -->
+        <p>ddd<del>sss</del></p>
+
+        <!-- addition text  -->
+        <p>aaa<ins>ddddd</ins></p>
+
+        <!-- under of word  -->
+        <p>h<sub>2</sub>o</p>
+
+        <!-- top of word  -->
+        <p>2<sup>2</sup></p>
+
+        <!--THE LINK IN OTHER PAGE AT NET -->
+        <a href="google.com" target="block">Google</a>
+
+        <!--THE NORMAL LINK-->
+        <a href="google.com">Google</a>
+
+        <!--THE TITLE BBY HOVERING-->
+        <a href="google.com" title="go to google">Google</a>
+
+        <!--THE LINK TO OTHER PAGE AT PC -->
+        <a href="page2.html">Page 2</a>
+
+        <!--THE LINK TO PART AT PAGE -->
+        <a href="#idname"> ID</a>
+
+        <!--imgee in priivte  folder-->
+        <img src="imgs/cars/FB_IMG_1616191666612.jpg">
+
+        <!--image between the page-->
+        <img src="FB_IMG_1623835564400.jpg">
+
+        <!--the vaal of thr missing imge-->
+        <img src="FB_IMG_623835564400.jpg" alt="the missing image" title="The Head of the image ">
+
+        <!--the normaal  list-->
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>
+                JS
+                <ul>
+                    <li>VUE</li>
+                    <li>ANGULER</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!--the ordenary  list-->
+
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+
+        <ol reversed>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+
+        <ol start="100">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+
+        <ol type="A">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+
+        <ol type="a">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+
+        <ol type="I">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+
+        <ol type="i">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+
+        <!--the decriiption  list-->
+        <dl>
+            <dt>HTML</dt>
+            <dd>languge of web</dd>
+            <dd> for structure </dd>
+            <dt>CSS</dt>
+            <dd>languge of web</dd>
+            <dd> for design </dd>
+        </dl>
+
+        <!--the table -->
+        <!--
+            The Fixed Normal Arrange for the tags is -> thead -> tbody -> tfoot
+            tr -> Table Row
+            th -> Table Head
+            td -> Table Data
+            caption - > Table's Title
+        -->
+        <table border="1px">
+            <caption>tthe information at 2030</caption>
+            <tfoot>
+                <td colspan="3">3</td>
+            </tfoot>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <td>Phone</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>zain</th>
+                    <th>20</th>
+                    <td>011111111</td>
+                </tr>
+                <tr>
+                    <th>zain</th>
+                    <th>20</th>
+                    <td>011111111</td>
+                </tr>
+                <tr>
+                    <th>azz</th>
+                    <th>20</th>
+                    <td>011111111</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">rizk</th>
+                    <td>011111111</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <!--the  span -->
+        <span>welcome</span>
+
+        <!--the BR-->
+        <div>
+            text <br> text <br> text <br> text
+        </div>
+
+        <!--the HR -> Block Item -->
+        <div>
+            text <hr> text
+        </div>
+
+        <!--the div the fathehr --->
+        <div>
+            <h1>AHMED</h1>
+            <p id="agg">AHMED</p>
+        </div>
+
+        <!--the Entities -->
+        <div>
+            &lt; hhr &gt;
+            &copy;
+            &amp;
+        </div>
+        
+        <!-- HTML New Tags -->
+        <header>the heaad </header>
+        <nav> the navigtion par </nav>
+        <aside>the side list </aside>
+        <section>
+            <article> Article 1 </article>
+            <article> Article 2 </article>
+            <article> Article 3 </article>
+            <article>
+                <!-- Image With Caption -->
+                <figure>
+                    <img src="" height="100px" width="100px" alt="New Image" title="X Image">
+                    <figcaption> New Image Added </figcaption>
+                </figure>
+            </article>
+        </section>
+        <footer>the footer of page </footer>
+
+        <!--audio src-->
+        <audio controls autoplay loop muted>
+            <source src="" type="audio/mpeg">
+        </audio>
+        <audio src="" type="audio/mpeg"></audio>
+
+        <!--video sourse-->
+        <video controls autoplay loop width="600px" height="400px" poster="imgs/cars/FB_IMG_1616191666612.jpg">
+            <source src="" type="video/mp4">
+        </video>
+        
+        <q>kookoooeoeeoeohoe</q>
+
+        <blockquote>ihhpoothhtohhoir</blockquote>
+
+        <!--
+            wbr -> to break the text at postion
+        -->
+        <p>ihhpoothhtohhoirihhpoothhtohh<wbr>oirihhpoothhtohhoirhoirihhpoothhtohhoirihhpooth</p>
+
+        <!-- 
+            bdi -> to isolate the text if mixed between english and arabic
+        -->
+        <p>ihhpoothhtohhoirihhpoothhtohhoiri<bdi>احمد</bdi>hhpoothhtohhoirihhpoothhtohhoiri</p>
+
+        <!--to write code with out changes -->
+        <code>
+                var x = 2;
+                var y = 2;
+                console.log(x + y);
+            </code>
+
+        <!--to write codee with main distance-->
+        <pre>
+                <code>
+                    var x = 2;
+                    var y = 2;
+                    console.log(x + y);
+                </code>
+        </pre>
+
+        <!-- iframe to get another page at our page -->
+        <iframe src="https://www.notion.so/0b200ba3413540568832b9706dba0407?v=8fee5a086dab4db982867ea169177852&pvs=47&qid=" width="100%" height="400px"></iframe>
+
+        <div class="div1"> welcome at egypt beby </div>
+        <div style="color:red;"> welcome at egypt beby </div>
+        <div class="div2"> welcome at egypt beby </div>
+
+        <p><abbr title="Hypertext Markup Language">HTML</abbr> the short hand</p>
+
+
+        <!--the form-->
+        <!--
+            GET -> Showen data in page bar
+            POST -> hidden data
+            action -> the reciver of the form's data
+
+        -->
+        <form action="" method="GET" novalidate target="_blanck">
+            <label for="name">username</label>
+            <input type="text" required placeholder="type your name" name="name" value="Ahmed" readonly>
+
+            <label for="pass">password</label>
+            <input type="password" required name="pass" autofocus minlength="10" maxlength="15">
+
+            <label>Email</label>
+            <input type="email" required name="mail">
+
+            <input type="number" min="100" max="1000" name="num">
+
+            <input type="hidden">
+
+            <input type="color" name="color" disabled>
+
+            <input type="range" min="10" max="100" step="20">
+
+            <input type="date">
+
+            <input type="month">
+
+            <input type="time">
+
+            <input type="url">
+
+            <input type="search">
+
+            <input type="file">
+
+            <input type="reset" value="refrech">
+
+            <input type="submit" value="save">
+
+            <div>
+                <div>
+                    <input type="radio" id="win" name="os" value="WINDOWS" checked>
+                    <label for="win">WINDOWS</label>
+                </div>
+                <div>
+                    <input type="radio" id="mac" name="os" value="MAC">
+                    <label for="mac">MAC</label>
+                </div>
+                <div>
+                    <input type="radio" id="lin" name="os" value="LINUCS">
+                    <label for="lin">LINUCS</label>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <input type="checkbox" id="win" name="ois" value="WINDOWS">
+                    <label for="win">WINDOWS</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mac" name="ois" value="MAC" checked>
+                    <label for="mac">MAC</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="lin" name="ois" value="LINUCS">
+                    <label for="lin">LINUCS</label>
+                </div>
+            </div>
+            <div>
+                <label for="Frameworks"> Choose One </label>
+                <!--
+                    multiple -> for choose more than one option
+                -->
+                <select name="Frameworks" id="Frameworks" multiple>
+                    <optgroup label="Frontend Frameworks">
+                        <option value="Anguler">Anguler</option>
+                        <option value="React">React</option>
+                        <option value="Vue">Vue</option>
+                    </optgroup>
+                    <optgroup label="Backend Frameworks">
+                        <option value="Django">Django</option>
+                        <option value="Flask">Flask</option>
+                        <option value="Laravel">Laravel</option>
+                        <option value="NET">.NET</option>
+                    </optgroup>
+                </select>
+            </div>
+            <textarea name="" id="" cols="" rows=""></textarea>
+            <!-- 
+                The List -> Select & Search bar at the same time
+            -->
+            <input list="Programming" name="Programming-Lang">
+            <datalist id="Programming">
+                <option value="Python">
+                <option value="Php">
+                <option value="C#">
+                <option value="C++">
+                <option value="C">
+            </datalist>
+        </form>
+
+        <div>
+            <img src="data:image/jpeg;base64,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" alt="Workplace" usemap="#workmap">
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+                <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+                <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+            </map>
+        </div>
+    </body>
+</html>

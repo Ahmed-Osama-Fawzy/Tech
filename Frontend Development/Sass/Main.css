@@ -1,0 +1,357 @@
+.Max {
+  color: red;
+  color: black;
+  size: 20px;
+}
+
+.h1 {
+  color: red;
+}
+
+.h2 {
+  color: green;
+}
+
+.h3 {
+  color: yellow;
+}
+
+.h4 {
+  color: yellow;
+  margin: 10px;
+}
+
+body {
+  padding: 50px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+body::after {
+  content: "";
+}
+body::before {
+  content: "";
+}
+body:hover {
+  color: aqua;
+}
+body .child {
+  color: azure;
+}
+body .child .grand-child {
+  color: blueviolet;
+}
+body.parent {
+  color: cadetblue;
+}
+body > .big {
+  color: chartreuse;
+}
+body[title=ali] {
+  color: darkolivegreen;
+}
+body .big,
+body .small {
+  color: darkcyan;
+}
+body .big .median,
+body .small .median {
+  color: ghostwhite;
+}
+
+span.a, span.h, span {
+  color: azure;
+  background-color: red;
+  font-size: x-large;
+}
+
+span {
+  padding: 20px;
+}
+
+span.h {
+  padding: 20px;
+}
+
+span.a {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.page {
+  background-color: black;
+  color: azure;
+  padding: 20px;
+}
+
+h1 {
+  direction: rtl;
+  padding: 20px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  width: 10px;
+  height: 5px;
+}
+
+/* Css Comment */
+/* First Loop Shape */
+.Class-1 {
+  border-radius: 11;
+}
+
+.Class-2 {
+  border-radius: 12;
+}
+
+.Class-3 {
+  border-radius: 13;
+}
+
+.Class-4 {
+  border-radius: 14;
+}
+
+.Class-5 {
+  border-radius: 15;
+}
+
+.Class-6 {
+  border-radius: 16;
+}
+
+.Class-7 {
+  border-radius: 17;
+}
+
+.Class-8 {
+  border-radius: 18;
+}
+
+.Class-9 {
+  border-radius: 19;
+}
+
+/* Second Loop Shape */
+.Class-1 {
+  border-radius: 11;
+}
+
+.Class-2 {
+  border-radius: 12;
+}
+
+.Class-3 {
+  border-radius: 13;
+}
+
+.Class-4 {
+  border-radius: 14;
+}
+
+.Class-5 {
+  border-radius: 15;
+}
+
+.Class-6 {
+  border-radius: 16;
+}
+
+.Class-7 {
+  border-radius: 17;
+}
+
+.Class-8 {
+  border-radius: 18;
+}
+
+.Class-9 {
+  border-radius: 19;
+}
+
+.Class-10 {
+  border-radius: 20;
+}
+
+/* Third Loop Shape */
+.Class-1 {
+  border-radius: 10;
+}
+
+.Class-2 {
+  border-radius: 11;
+}
+
+.Class-3 {
+  border-radius: 13;
+}
+
+.Class-4 {
+  border-radius: 16;
+}
+
+.Class-5 {
+  border-radius: 20;
+}
+
+.Class-6 {
+  border-radius: 25;
+}
+
+.Class-7 {
+  border-radius: 31;
+}
+
+.Class-8 {
+  border-radius: 38;
+}
+
+.Class-9 {
+  border-radius: 46;
+}
+
+.Class-10 {
+  border-radius: 55;
+}
+
+/* Using Each with 2 Paramter */
+.Facebook::after {
+  content: "Facebook";
+  font-size: x-large;
+}
+
+.Instgram::after {
+  content: "Instgram";
+  font-size: x-large;
+}
+
+.Twitter::after {
+  content: "Twitter";
+  font-size: x-large;
+}
+
+/* Using Each with 2 Paramter */
+.Facebook::after {
+  content: "Facebook";
+  font-size: x-large;
+  color: Blue;
+}
+
+.Youtube::after {
+  content: "Youtube";
+  font-size: x-large;
+  color: Red;
+}
+
+.Github::after {
+  content: "Github";
+  font-size: x-large;
+  color: Black;
+}
+
+/* Using Each with 3 Paramter */
+.One::after {
+  content: "One";
+  font-size: 10px;
+  color: Black;
+}
+
+.Two::after {
+  content: "Two";
+  font-size: 15px;
+  color: Gray;
+}
+
+.Three::after {
+  content: "Three";
+  font-size: 20px;
+  color: Blue;
+}
+
+/* The Loop with While */
+.class-0 {
+  width: 100px;
+  height: 100px;
+}
+
+.class-1 {
+  width: 101px;
+  height: 100.5px;
+}
+
+.class-2 {
+  width: 102px;
+  height: 101px;
+}
+
+.class-3 {
+  width: 103px;
+  height: 101.5px;
+}
+
+.class-4 {
+  width: 104px;
+  height: 102px;
+}
+
+.class-5 {
+  width: 105px;
+  height: 102.5px;
+}
+
+.class-6 {
+  width: 106px;
+  height: 103px;
+}
+
+.class-7 {
+  width: 107px;
+  height: 103.5px;
+}
+
+.class-8 {
+  width: 108px;
+  height: 104px;
+}
+
+.class-9 {
+  width: 109px;
+  height: 104.5px;
+}
+
+.class-10 {
+  width: 110px;
+  height: 105px;
+}
+
+.class-x {
+  width: 600px;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .master {
+    color: azure;
+  }
+}
+@media (min-width: 767px) and (max-width: 899px) {
+  .master {
+    color: aquamarine;
+  }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .master {
+    color: rgb(127, 255, 133);
+  }
+}
+@media (min-width: 1200px) {
+  .master {
+    color: rgb(255, 127, 217);
+  }
+}/*# sourceMappingURL=Main.css.map */

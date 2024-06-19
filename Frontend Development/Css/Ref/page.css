@@ -1,0 +1,436 @@
+/*
+CSS -> Cascade Style Sheet
+Pseudo tages 
+:hover              to restyle if i hover at el
+:visited            to restyle if i visited this link before
+:empty              to restyle at the empty element
+:checked            to restyle aat the check ed boxx
+:active             to restyle at the slected element
+:foucs              to restyle if foucs at it
+:link               to restyle at the link
+:rquired
+:disabled
+::placeholder 
+::selection
+::first-letter       to select the first letter 
+::first-line         to select the first line 
+::before             to add think before this content 
+::before             {  content:"";  }
+::after              to add think after this content 
+::after              {  content:"";  }
+atrr()
+url()
+var()
+calc()
+*/
+
+/*
+-webkit-
+-moz-
+-o-
+-ms-
+*/
+
+/* inthret =>  to take the value from the father in any think */
+
+/* class or id =>  mustnot start by number */
+
+/* !important  =>  write it after the value to be the strongest value at all */
+
+/* css varibiles */
+:var{
+    --maincolor: red;
+    --mainpadding: 20px;
+    --mainmargin  :10px;
+}
+div {
+        /*colorrofbackground*/background-color: chartreuse;
+        /*toresetimmageatbackgroud*/background-image: url("../imgs/cars/FB_IMG_1616191666612.jpg");
+        /*todontreoatingoftheimage*/background-repeat: no-repeat;
+        /*toreoatingoftheimage*/background-repeat: repeat;
+        /*toreoatingoftheimage*/background-repeat: repeat-x;
+        /*toreoatingoftheimage*/background-repeat: repeat-y;
+        /*tofixattopwithscrolling*/background-attachment: scroll;
+        /*tomovewithscrolling*/background-attachment: fixed;
+        /*backgroundpostion(left-center-right)-(bottom-centre-top)-px-%*/background-position: center center;
+        background-position: 50% 50% ;
+        /*backgroundsizecovertoresizetheimagebutwillbecuttedcontaintoresizetheimagebutwontbecuttedwidthheight(px-%)*/background-size: auto;
+        background-size: cover;
+        background-size: contain;
+        background-size: 100% 100%;
+        background-size: 100px 100px;
+        /*paddingwithclocktoprightbottomleft*/padding: 0 10px 10% 0;
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        /*marginwithclocktopprightbottomleftautopx%*/margin: 10px auto 10% auto;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-bottom: 10%;
+        margin-left: auto;
+        /*borderputextrawidthandheightwithclocktoprightbottomleftpx%style*/border: chartreuse solid 2px;
+        border-color: chartreuse red azure blue;
+        border-style: dotted solid;
+        border-width: 2px 1px 3px 4px;
+        /*tobecirclee50%or100%*/border-radius: 100%;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10pxs;
+        /*outlitedontputeextrawidth*/outline: 2px 4px solid aqua;
+        outline-width: 2px 4px;
+        outline-style: solid;
+        outline-color: aqua;
+        /*displayBlock-Oneitemintherow-AcceptMargin,Padding,Height,WidthInline-NumberofItemsatthesamerow-Acceptonlyright&LettMargin&PaddingInline-Block-NumberofItemsatthesamerow-AcceptMargin,Padding,Height,WidthNone-ToRemoveTheItemfromthepage*/display: inline;
+        display: none;
+        display: block;
+        display: inline-block;
+        /*visiblityhiddentodeletetheelementwithsaveitpostionempty*/visibility: hidden;
+        visibility: visible;
+        /*widthheightpx-%*/width: fit-content;
+        width: 100px;
+        max-width: 1000px;
+        min-width: 10px;
+        height: 100px;
+        max-height: 1000px;
+        min-height: 10px;
+        /*Overflowscrolltoputfixedscrollautotobeautomaticyhiddentohidetheextratextvisibiltoshowtheextratextoverflow-y->thebottomoverflow-x->theright*/overflow: hidden;
+        overflow: auto;
+        overflow-y: scroll;
+        overflow: visible;
+        overflow-y: auto;
+        overflow-x: auto;
+        /*text-shadow(+)right(+)bottomblurcolortext-shadow(-)left(-)topblurcolor*/text-shadow: 2px 2px 5px 5px red;
+        /*text-alignrightleftcentre*/text-align: center;
+        text-align: left;
+        text-align: right;
+        /*directionltrenglishrtlarabic*/direction: ltr;
+        direction: rtl;
+        /*vertical-aligntopbottommiddle*/vertical-align: bottom;
+        vertical-align: top;
+        vertical-align: middle;
+        /*text-decorationcolorunnderlineoverlinnenoneline-through*/text-decoration: line-through;
+        text-decoration: underline;
+        text-decoration: overline;
+        text-decoration: none;
+        /*text-transformcapitalizethefirstwirdiscaptaluppercaseallwordsarecapitallowercaseallwordsaresmallnonetogetwordsatitnatural*/text-transform: capitalize;
+        text-transform: uppercase;
+        text-transform: lowercase;
+        text-transform: none;
+        /*tomakespacebetweenletters+wide-narow*/letter-spacing: 2px;
+        letter-spacing: -2px;
+        /*thespacebeforethewords*/text-indent: 50px;
+        /*thespacebetwenwords+wide-narow*/word-spacing: 10px;
+        /*toshowtheextrawordsanddontwrapit*/white-space: nowrap;
+        /*tohidetheexrtawordsandputdottes*/text-overflow: ellipsis;
+        /*fontkindtouseextarnalfontwilladdthelinktagofthefontatthehtmlfile*/font-family:Arial, Helvetica, sans-serif ;
+        /*fontsize*/font-size: 100px;
+        font-size: larger;
+        font-size: 100%;
+        font-size: 1em;
+        font-size: 2vw;
+        /*fontchape*/font-style: italic;
+        font-style: oblique;
+        /**/font-variant: small-caps;
+        /*fontweight*/font-weight: bold;
+        /*floatleft-right*//*clearbothtomakeasbrafterthefloat*/float: left;
+        float: right;
+        clear: both;
+        /*calc()*/width: calc( (100% - 100px) / 5 );
+        width: calc( (100% - 10%) / 5 );
+        width: calc( 100% / 5 );
+        /*opacity0.001->1*/opacity: 0.5;
+        /*postion*//*tomakeelementthefatherofanther*/position: relative;
+        /*tomakeelementfreeinthefatherdontmovewithscroll*/position: absolute;
+        /*tomakeelementfixedmovewithscroll*/position: fixed;
+        /*tomakeelementfixedittheirnormalpostionandcanotbeefecctwiththink*/position: static;
+        /*tomakeelementfixedinpraivtepartofpage*/position: sticky;
+        top: 10px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        /*z-indexacceptnummbersfrombottomtotopcanworkwithanypostion*/z-index: 100;
+        /*list*/list-style-type: none;
+        list-style-position: inside;
+        list-style-image: url("");
+        list-style: circle inside;
+        /*theborderbetweencellsofthetable*/border-spacing: 10px;
+        /*tobutcounterand"thecounter"isthevaluecanbutincontentatbrforeorafter*/counter-increment: thecounter;
+        /*cursor*/cursor: alias;
+        /*boxshadowh-shadowv-shadowblurspreadcolorinseetoroutset*/box-shadow: 10px 10px 5px 5px blueviolet ;
+        /*box-sizingtomakewidthcontentsmarginandborderandpaddingandoutline*/box-sizing: border-box;
+        /*transitionisthetiimewhichanmittionproperty-duration-delay-functiontransition-property->thepropertywhichapplayedthetransition*/transition-duration: 2s;
+        transition-delay: 0.2s;
+        transition-property: all;
+        transition-timing-function: ease;
+        transition: all 2s 0.2s ease-in;
+        /*usethevar*/color: var(--maincolor,red);
+        padding: var(--mainpadding,10px);
+        margin: calc(10px + var(--mainmargin,10px));
+        /*TheLocalVariable*/--mainLocalColor: green;
+        /*filtergrayscaletomakethethinkblackandwhiteblurtomakephotounclearinverttomakephotoreseve*/filter: grayscale(100%);
+        /*filtertomaketheimageBlured*/filter: blur(4px);
+        filter:brightness();
+        /*tomakemuchcolorinsameplacetodirection,color1,color2*/background-image: linear-gradient(to top , red 20% , blue 20% , blue 40% , green 40% , green 60% , yellow 60% , yellow 80% , black 100%);
+        /*pointereventswhichmadewhenclick*/pointer-events: painted;
+        /*flexPropertiessettedatthecontainerdisplayflexflex-directionrowrowreversecolumncolumnreverseflex-wrapnowrapwrapwrapreverseflex-flowderiction-wrap*/display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column-reverse wrap;
+        /*thedefultvalue*/justify-content: flex-start;
+        /*tostartthesecoundlinefromright*/justify-content: flex-end;
+        /*tostarttheseecoundvaluefromcentre*/justify-content: center;
+        /*toputspaacebetweentheelements*/justify-content: space-between;
+        /*toputspacebefpretheelements*/justify-content: space-around;
+        /*toputspaceafterandbeforetheelements*/justify-content: space-evenly;
+        /*toputtheitematthemeddileofheight*/align-items: center;
+        /*toputtheitematthetop*/align-items: flex-start;
+        /*toputtheitematthebottom*/align-items: flex-end;
+        /*tomaketheitemsrtetch*/align-items: stretch;
+        /*equalalignitemsputthistakeallofthecontent*/align-content: center;
+        align-content: flex-end;
+        align-content: stretch;
+        align-content: space-between;
+        align-content: flex-start;
+        align-content: space-around;
+        /*tobesmallerthananotheritems*/flex-shrink: 0;
+        /*totakethefullwidthtobebigthananotheitems*/flex-grow: 1;
+        /*torearrangethe*/order: 1;
+        /*equalthewidthbutworkashieghtifflexiscolumn*/flex-basis: 200px;
+        /*theshorthandofflexgrow-shirnk-basis*/flex: 0 1 200px 0 auto;
+        /*equalalignitemsbutthisforoneitem*/align-self: stretch;
+        align-self: flex-end;
+        align-self: flex-end;
+        align-self: center;
+        align-self: auto;
+        /*gridsystem*/display: grid;
+        /*thenumberequalthenumofcolumns*/grid-template-columns: auto 100% 100px ;
+        grid-template-columns: repeat(3 , auto);
+        grid-template-columns: repeat(3 , 1fr);
+        grid-template-columns: auto auto auto repeat(3 , auto) repeat(3 , 1fr);
+        /*thenumberequqlthenumofrows*/grid-template-rows: auto 100% 100px ;
+        grid-template-rows: repeat(3 , auto);
+        grid-template-rows: repeat(3 , 1fr);
+        grid-template-rows: auto auto auto repeat(3 , auto) repeat(3 , 1fr);
+        /*thegaparoundtheitems*/row-gap: 10px;
+        column-gap: 10px;
+        gap: 10px 10px;
+        /*align-itemsandjustefy-contentworkswithgrid*//*thedefultvalue*/justify-content: flex-start;
+        /*tostartthesecondlinefromright*/justify-content: flex-end;
+        /*tostartthesecondvaluefromcentre*/justify-content: center;
+        /*toputspaacebetweentheelements*/justify-content: space-between;
+        /*toputspacebeforetheelements*/justify-content: space-around;
+        /*toputspaceafterandbeforetheelements*/justify-content: space-evenly;
+        /*gridareasnumisofcolumns*/grid-template-areas:"logo head head head" "nav . sec  sec" "foot foot foot foot";
+        /*gridareausingatthechildofthegridparenttonamesit*/
+        grid-area: logo;
+        grid-area: head;
+        grid-area: nav;
+        grid-area: sec;
+        grid-area: foot;
+        /*thegridnum/num=>from/to||spannum=>numofcolumns*/grid-column: span 4;
+        grid-row: span 3;
+        grid-row: 2/4;
+        /*toputlimitforprivateitem*/grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        /*tofullallplacebyitemswiththiswidthfrom200pxto.....*/grid-template-columns: repeat(auto-fill , minmax(200px , 1fr));
+        /*transformscaletoresizethewidthandtheheight*/transform: scaleX(2);
+        transform: scaleY(2);
+        transform: scale(-2 , -2);
+        /*transformrotatetospntheshape+formright-forleft*/transform: rotateX(10deg);
+        transform: rotatey(10deg);
+        transform: rotate(10deg , 10deg);
+        transform: rotateZ(10deg);
+        transform: rotate3d(1 , 1 , 1 , 10deg);
+        /*transform translte to moving the item +right and bottm -top and left*/
+        transform: translateX(10px);
+        transform: translateY(10px);
+        transform: translate(10px , 10px);
+        transform: translateZ(10px);
+        transform: translate3d(10deg , 10deg , 10deg);
+        /**/transform: skewX(10deg);
+        transform: skewY(10deg);
+        transform: skew(10deg , 10deg);
+        /*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+        transform: matrix(2 , 10deg , 2 , 10deg , 20px , 20px);
+        /*transformmorigintheplacewitchitemspanarooundit*/transform-origin: 50px 50px ;
+        transform-origin: 50% 50%;  
+        transform-origin: center center;
+        /*thedistancebetweentheitemandthespectator*/perspective: 1000px;
+        /*animtionworks*//*thename*/animation-name: first-anmition;
+        /*timeofdoing*/animation-duration: 5s;
+        /*numofdoinginfinite=every*/animation-iteration-count: infinite;
+        /*schapeofthemoving*/animation-timing-function: linear;
+        /*tortakethelastschapewichisputatit*/animation-fill-mode: both;
+        /*tostop5sbeforedoing*/animation-delay: 5s;
+        /*meanstheanimtionstartby100%*/animation-direction: reverse;
+        /*thestateofanimition*/animation-play-state: paused;
+        animation-play-state: running;
+        /*animation: name duration timing-function delay iteration-count direction fill-mode;
+        */animation: name duration timing-function delay iteration-count direction fill-mode;
+        -webkit-filter:brightness();
+        -webkit-transform: rotate3d(1 , 1 , 1 , 10deg);
+        -moz-transform: rotate3d(1 , 1 , 1 , 10deg);
+        -ms-transform: rotate3d(1 , 1 , 1 , 10deg);
+        -o-transform: rotate3d(1 , 1 , 1 , 10deg);
+}
+nav {
+    grid-area: nav;
+    background: chartreuse;
+}
+header {
+    grid-area: head;
+    background-color: crimson;
+}
+section {
+    grid-area: sec;
+    background-color: darkblue;
+}
+footer {
+    grid-area: foot;
+    background-color: lightskyblue
+}
+/* animaion */
+@keyframes first-anmition {
+    from {
+        background-color: lightslategray;
+    }
+    to {
+        background-color: mediumblue;
+    }
+}
+@keyframes secound-anmition {
+    0% {
+        background-color: lightslategray;
+    }
+    50% {
+        background-color: mediumblue;
+    }
+    100% {
+        background-color: mediumspringgreen;
+    }
+}
+/* use classs */
+.div1 { color: blue; }
+
+/* use id */
+#div1 { color: blue; }
+
+/* grouping can get class with id with EL name */
+.div1,
+#div2,
+p { background-color: cornflowerblue; }
+
+/* the nesting */
+div nav h1 { color: darkmagenta ; }
+
+/* element have this both class */
+.class-one.class-two{
+    background-color: antiquewhite;
+}
+
+/* el.classname the element which take this name */
+p.head {
+    color: navy;
+}
+    
+/* the direct child(p) from the father(div) */
+div > p {
+    color: mediumspringgreen;
+}
+
+/* el + other el  the other el must be after the el */
+div + p {
+    color: orchid;
+}
+
+/* el ~ other el the direct children from the parent */
+div ~ p {
+    color: purple;
+}
+
+/* [atrr] any element has this atrr */
+[title] {
+    color: red;
+}
+
+/* el[atrr] the element wich has this atrr */
+input[name] {
+    color: rosybrown;
+}
+
+/* [atrr="val"]  any elemenet wich has this atrr by this value */
+[title="ali"] {
+    color: skyblue;
+}
+
+/* el[atrr="val"]  the elemenet wich has this atrr by this value */
+input[name="username"] {
+    color: tomato;
+}
+
+/* [atrr~="val"]  to get element have this val as a word */
+[value~="num"] {
+    color: yellow;
+}
+
+/* [atrr*="val"]  to get element have this val */
+[value*="num"] {
+    color: plum;
+}
+
+/* [atrr^="val"]  to get element starts by this val */
+[value^="num"] {
+    color: rgb(48, 85, 40);
+}
+
+/* el:first-child  search at this el and must be the first child */
+p:first-child {
+    color: slategray;
+}
+
+/* el:last-child  search at this el and must be the last child */
+p:last-child {
+    color: springgreen;
+}
+
+/* el:only-child search at this el but must be the only child */
+p:only-child {
+    color: yellowgreen;
+}
+
+/* el:first-of-type  search at this el and  must be first of this type at page*/
+p:first-of-type {
+    color: tan;
+}
+
+/* el:last-of-type  search at this el and  must be last of this type at page*/
+p:last-of-type {
+    color: whitesmoke;
+}
+
+p:nth-of-type(2) {
+    color: whitesmoke;
+}
+
+/* el:only-of-type search at this el but must be the only of type from this father */
+p:only-of-type {
+    color: yellowgreen;
+}
+
+/* media for private width */
+@media (min-width: 1000px ) and (max-width : 1400px ){
+    * {
+        background-color: black;
+    }
+}
+
+/* media for print */
+@media print{
+    * {
+        background-color: purple;
+    }
+}

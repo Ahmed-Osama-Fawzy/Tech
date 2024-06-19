@@ -1,0 +1,13 @@
+- The Variable
+-- declear by set $ before name
+-- Effected by the scpoe
+-- '!global' to make bloc scpoe global
+
+- @use
+-- To Import page Content at another page
+
+- Placeholder %
+--
+
+- @extends
+--
