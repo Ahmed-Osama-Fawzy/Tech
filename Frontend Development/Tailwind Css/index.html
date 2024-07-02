@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailWind CSS Tracker</title>
+</head>
+<body class=" scroll-smooth">
+    <header id="Home" class="w-full h-screen bg-gradient-to-r from-gray-800 to-gray-300 text-center align-middle ">
+        <nav class="w-full sticky top-0 left-0 right-0 text-slate-50  bg-slate-700 hover:bg-slate-600 transition-all">
+            <ul class=" grid grid-cols-4 gap-3 justify-center align-middle justify-items-center p-5 text-2xl">
+                <li> <a href="#Home" class=" hover:text-slate-300 transition-all"> Home </a> </li>
+                <li id="Links"> 
+                    <span class=" cursor-pointer hover:text-slate-300 transition-all" id="ClassesTag"> Classes </span>
+                    <ul class=" hidden w-full max-[450px]:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-8 gap-5 absolute bg-slate-900 p-5 top-full left-0 rounded-xl" id="Tags">
+                        <li>
+                            <span class=" text-slate-400 font-bold"> Backgroud </span>
+                            <ul>
+                                <li> <a href=""> Attachment </a>  </li>
+                                <li> <a href=""> Clip </a>  </li>
+                                <li> <a href="#BackgroudColor"> Color </a>  </li>
+                                <li> <a href=""> Origin </a>  </li>
+                                <li> <a href="#BackgroudPosition"> Position </a>  </li>
+                                <li> <a href=""> Repeat </a>  </li>
+                                <li> <a href=""> Size </a>  </li>
+                                <li> <a href=""> Image </a>  </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class=" text-slate-400 font-bold"> Sizing </span>
+                            <ul>
+                                <li> <a href=""> Width </a> </li>
+                                <li> <a href=""> Min Width </a> </li>
+                                <li> <a href=""> Max Width </a> </li>
+                                <li> <a href=""> Height </a> </li>
+                                <li> <a href=""> Height </a> </li>
+                                <li> <a href=""> Height </a> </li>
+                                <li> <a href=""> Size </a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class=" text-slate-400 font-bold"> Spacing </span>
+                            <ul>
+                                <li> <a href=""> Padding </a> </li>
+                                <li> <a href=""> Margin </a> </li>
+                                <li> <a href=""> Space <br> Between </a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class=" text-slate-400 font-bold"> Borders </span>
+                            <ul>
+                                <li> <a href=""> Width </a> </li>
+                                <li> <a href=""> Radius </a> </li>
+                                <li> <a href=""> Color </a> </li>
+                                <li> <a href=""> Style </a> </li>
+                                <li> <a href=""> Radius </a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class=" text-slate-400 font-bold"> Outlines </span>
+                            <ul>
+                                <li> <a href=""> Width </a> </li>
+                                <li> <a href=""> Style </a> </li>
+                                <li> <a href=""> Color </a> </li>
+                                <li> <a href=""> Offset </a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class=" text-slate-400 font-bold"> Box Shadow </span>
+                            <ul>
+                                <li> <a href=""> Size </a> </li>
+                                <li> <a href=""> Color </a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li></li>
+                <li> <a href="#ContactUs" class=" hover:text-slate-300 transition-all"> Contact Us </a> </li>
+            </ul>
+        </nav>
+        <h1 class=" font-bold text-gray-950 text-3xl lg:text-5xl mt-28 uppercase"> Welcome to Tailwind CSS Tracking Site </h1>
+        <input type="search" placeholder="Search Bar" class=" ml-auto w-1/2 h-11 p-4 mt-28 font-semibold text-3xl hover:text-slate-100 hover:bg-slate-950 text-slate-950 bg-slate-100 rounded-xl uppercase hover:shadow-xl shadow-slate-500 transition-all">
+    </header>
+    <section id="Classes" class=" text-center">
+        <h1 id="BackgroudColor" class="p-10 font-bold text-4xl hover:text-slate-400 text-slate-950 uppercase hover:shadow-xl shadow-slate-500 transition-all"> Backgroud Color </h1>
+        <article class="Prop w-full grid grid-cols-1 sm:grid-cols-2">
+            <!--  -->
+            <div class="Test h-[50vh]  sm:h-screen bg-slate-500 grid">
+                <form class=" w-3/4 h:full sm:h-3/4 m-auto rounded-xl p-3 bg-slate-100 grid place-content-around">
+                    <label class="font-bold text-2xl hover:text-slate-400 text-slate-950 uppercase transition-all"> Backgroud Colors </label>
+                    <div>
+                        <select class=" w-3/4 h-fit p-2 m-auto text-xl mt-3 bg-slate-400 hover:text-slate-100 rounded-2xl hover:bg-slate-600 transition-all">
+                            <option value="bg-white"> bg-white </option>
+                            <option value="bg-slate-100"> bg-slate-100 </option>
+                            <option value="bg-slate-200"> bg-slate-200 </option>
+                        </select>
+                        <input type="reset" value="APPLY" class="Apply w-3/4 h-fit p-1 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="enter propertey" class="w-3/4 h-fit p-1  m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                        
+                        <input type="reset" value="USE" class="Use w-3/4 h-fit p-1 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                    </div>
+                    <input type="reset" value="RESET" class="w-3/4 h-fit p-2 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all"> 
+                </form>
+            </div>
+            <!--  -->
+            <div class="Test h-[50vh] sm:h-screen bg-slate-900 grid">
+                <div class="Div w-3/4 h-3/4 m-auto rounded-xl bg-slate-100"></div>
+            </div>
+        </article>
+        
+        <h1 id="BackgroudPosition" class="p-10 font-bold text-4xl hover:text-slate-400 text-slate-950 uppercase hover:shadow-xl shadow-slate-500 transition-all"> Backgroud Position </h1>
+        <article class="Prop w-full grid grid-cols-1 sm:grid-cols-2">
+            <!--  -->
+            <div class="Test h-[50vh]  sm:h-screen bg-slate-500 grid">
+                <form class=" w-3/4 h:full sm:h-3/4 m-auto rounded-xl p-3 bg-slate-100 grid place-content-around">
+                    <label class="font-bold text-2xl hover:text-slate-400 text-slate-950 uppercase transition-all"> Backgroud Positions </label>
+                    <div>
+                        <select class=" w-3/4 h-fit p-2 m-auto text-xl mt-3 bg-slate-400 hover:text-slate-100 rounded-2xl hover:bg-slate-600 transition-all">
+                            <option value="bg-white"> bg-white </option>
+                            <option value="bg-slate-100"> bg-slate-100 </option>
+                            <option value="bg-slate-200"> bg-slate-200 </option>
+                        </select>
+                        <input type="reset" value="APPLY" class="Apply w-3/4 h-fit p-1 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="enter propertey" class="w-3/4 h-fit p-1  m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                        
+                        <input type="reset" value="USE" class="Use w-3/4 h-fit p-1 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                    </div>
+                    <input type="reset" value="RESET" class="w-3/4 h-fit p-2 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all"> 
+                </form>
+            </div>
+            <!--  -->
+            <div class="Test h-[50vh] sm:h-screen bg-slate-900 grid">
+                <div class="Div w-3/4 h-3/4 m-auto rounded-xl bg-slate-100"></div>
+            </div>
+        </article>
+    </section>
+    <section id="ContactUs" >
+
+    </section>
+    <script>
+
+        // Open & Close Classes Menu
+        let Tag = document.getElementById("ClassesTag")
+        let Tags = document.getElementById("Tags")
+        let Hrefs = Array.from(document.querySelectorAll("#Links ul li ul li a"))
+        let Uses = Array.from(document.getElementsByClassName("Use"))
+        let Applies = Array.from(document.getElementsByClassName("Apply"))
+        let Divs = Array.from(document.getElementsByClassName("Div"))
+        Tag.addEventListener("click",()=>{
+            Tags.classList.toggle("hidden")
+            Tags.classList.toggle("grid")
+        })
+
+        // Close When Choose Link
+        Hrefs.forEach((e)=>{
+            e.addEventListener("click",()=>{
+                Tags.classList.toggle("hidden")
+                Tags.classList.toggle("grid")
+            })
+        })
+
+        // Use the written value
+        Uses.forEach((e,index) => {
+            e.addEventListener("click",()=>{
+                let Val = e.previousElementSibling.value
+                if (Val){
+                    let Class = Divs[index].classList[Divs[index].classList.length-1]
+                    Divs[index].classList.remove(Class)
+                    Divs[index].classList.add(Val)
+                }
+            })
+        })
+
+        // Apply the choosen value
+        Applies.forEach((e,index) => {
+            e.addEventListener("click",()=>{
+                let Val = e.previousElementSibling.value
+                let Class = Divs[index].classList[Divs[index].classList.length-1]
+                Divs[index].classList.remove(Class)
+                Divs[index].classList.add(Val)
+            })
+        })
+
+    </script>
+</body>
+</html>
