@@ -21,7 +21,7 @@
                                 <li> <a href=""> Clip </a>  </li>
                                 <li> <a href="#BackgroudColor"> Color </a>  </li>
                                 <li> <a href=""> Origin </a>  </li>
-                                <li> <a href="#BackgroudPosition"> Position </a>  </li>
+                                <li> <a href=""> Position </a>  </li>
                                 <li> <a href=""> Repeat </a>  </li>
                                 <li> <a href=""> Size </a>  </li>
                                 <li> <a href=""> Image </a>  </li>
@@ -30,20 +30,20 @@
                         <li>
                             <span class=" text-slate-400 font-bold"> Sizing </span>
                             <ul>
-                                <li> <a href=""> Width </a> </li>
+                                <li> <a href="#Width"> Width </a> </li>
                                 <li> <a href=""> Min Width </a> </li>
                                 <li> <a href=""> Max Width </a> </li>
-                                <li> <a href=""> Height </a> </li>
-                                <li> <a href=""> Height </a> </li>
-                                <li> <a href=""> Height </a> </li>
+                                <li> <a href="#Height"> Height </a> </li>
+                                <li> <a href=""> Min Height </a> </li>
+                                <li> <a href=""> Max Height </a> </li>
                                 <li> <a href=""> Size </a> </li>
                             </ul>
                         </li>
                         <li>
                             <span class=" text-slate-400 font-bold"> Spacing </span>
                             <ul>
-                                <li> <a href=""> Padding </a> </li>
-                                <li> <a href=""> Margin </a> </li>
+                                <li> <a href="#Padding"> Padding </a> </li>
+                                <li> <a href="#Margin"> Margin </a> </li>
                                 <li> <a href=""> Space <br> Between </a> </li>
                             </ul>
                         </li>
@@ -100,7 +100,7 @@
                     <div>
                         <input type="text" placeholder="enter propertey" class="w-3/4 h-fit p-1  m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
                         
-                        <input type="reset" value="USE" class="Use w-3/4 h-fit p-1 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                        <input type="reset" value="USE"   data-default="bg-slate-100" class="Use w-3/4 h-fit p-1 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
                     </div>
                     <input type="reset" value="RESET" class="w-3/4 h-fit p-2 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all"> 
                 </form>
@@ -111,17 +111,101 @@
             </div>
         </article>
         
-        <h1 id="BackgroudPosition" class="p-10 font-bold text-4xl hover:text-slate-400 text-slate-950 uppercase hover:shadow-xl shadow-slate-500 transition-all"> Backgroud Position </h1>
+        <h1 id="Padding" class="p-10 font-bold text-4xl hover:text-slate-400 text-slate-950 uppercase hover:shadow-xl shadow-slate-500 transition-all"> Padding </h1>
         <article class="Prop w-full grid grid-cols-1 sm:grid-cols-2">
             <!--  -->
             <div class="Test h-[50vh]  sm:h-screen bg-slate-500 grid">
                 <form class=" w-3/4 h:full sm:h-3/4 m-auto rounded-xl p-3 bg-slate-100 grid place-content-around">
-                    <label class="font-bold text-2xl hover:text-slate-400 text-slate-950 uppercase transition-all"> Backgroud Positions </label>
+                    <label class="font-bold text-2xl hover:text-slate-400 text-slate-950 uppercase transition-all"> Item Padding </label>
                     <div>
                         <select class=" w-3/4 h-fit p-2 m-auto text-xl mt-3 bg-slate-400 hover:text-slate-100 rounded-2xl hover:bg-slate-600 transition-all">
-                            <option value="bg-white"> bg-white </option>
-                            <option value="bg-slate-100"> bg-slate-100 </option>
-                            <option value="bg-slate-200"> bg-slate-200 </option>
+                            <option value="p-0"> p-0 </option>
+                            <option value="p-1"> p-1 </option>
+                            <option value="p-2"> p-2 </option>
+                        </select>
+                        <input type="reset" value="APPLY" class="Apply w-3/4 h-fit p-1 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="enter propertey" class="w-3/4 h-fit p-1  m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                        
+                        <input type="reset" value="USE"  data-default="p-0" class="Use w-3/4 h-fit p-1 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                    </div>
+                    <input type="reset" value="RESET" class="w-3/4 h-fit p-2 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all"> 
+                </form>
+            </div>
+            <!--  -->
+            <div class="Test h-[50vh] sm:h-screen bg-slate-900 grid">
+                <div class="Div w-3/4 h-3/4 m-auto rounded-xl bg-slate-100 text-5xl p-0"><span class=" bg-slate-600 rounded-2xl p-0 m-0">eeeee</span></div>
+            </div>
+        </article>
+
+        <h1 id="Margin" class="p-10 font-bold text-4xl hover:text-slate-400 text-slate-950 uppercase hover:shadow-xl shadow-slate-500 transition-all"> Margin </h1>
+        <article class="Prop w-full grid grid-cols-1 sm:grid-cols-2">
+            <!--  -->
+            <div class="Test h-[50vh]  sm:h-screen bg-slate-500 grid">
+                <form class=" w-3/4 h:full sm:h-3/4 m-auto rounded-xl p-3 bg-slate-100 grid place-content-around">
+                    <label class="font-bold text-2xl hover:text-slate-400 text-slate-950 uppercase transition-all"> Item Marign </label>
+                    <div>
+                        <select class=" w-3/4 h-fit p-2 m-auto text-xl mt-3 bg-slate-400 hover:text-slate-100 rounded-2xl hover:bg-slate-600 transition-all">
+                            <option value="m-0"> m-0 </option>
+                            <option value="m-1"> m-1 </option>
+                            <option value="m-2"> m-2 </option>
+                        </select>
+                        <input type="reset" value="APPLY" class="Apply w-3/4 h-fit p-1 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="enter propertey" class="w-3/4 h-fit p-1  m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                        
+                        <input type="reset" value="USE"  data-default="m-0" class="Use w-3/4 h-fit p-1 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                    </div>
+                    <input type="reset" value="RESET" class="w-3/4 h-fit p-2 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all"> 
+                </form>
+            </div>
+            <!--  -->
+            <div class="Test h-[50vh] sm:h-screen bg-slate-900 grid">
+                <div class="Div w-3/4 h-3/4 rounded-xl bg-slate-100 text-5xl m-0"></div>
+            </div>
+        </article>
+
+        <h1 id="Width" class="p-10 font-bold text-4xl hover:text-slate-400 text-slate-950 uppercase hover:shadow-xl shadow-slate-500 transition-all"> Width </h1>
+        <article class="Prop w-full grid grid-cols-1 sm:grid-cols-2">
+            <!--  -->
+            <div class="Test h-[50vh]  sm:h-screen bg-slate-500 grid">
+                <form class=" w-3/4 h:full sm:h-3/4 m-auto rounded-xl p-3 bg-slate-100 grid place-content-around">
+                    <label class="font-bold text-2xl hover:text-slate-400 text-slate-950 uppercase transition-all"> Item Width </label>
+                    <div>
+                        <select class=" w-3/4 h-fit p-2 m-auto text-xl mt-3 bg-slate-400 hover:text-slate-100 rounded-2xl hover:bg-slate-600 transition-all">
+                            <option value="w-0"> w-0 </option>
+                            <option value="w-1"> w-1 </option>
+                            <option value="w-2"> w-2 </option>
+                        </select>
+                        <input type="reset" value="APPLY" class="Apply w-3/4 h-fit p-1 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="enter propertey" class="w-3/4 h-fit p-1  m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                        
+                        <input type="reset" value="USE"  data-default="w-3/4" class="Use w-3/4 h-fit p-1 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
+                    </div>
+                    <input type="reset" value="RESET" class="w-3/4 h-fit p-2 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all"> 
+                </form>
+            </div>
+            <!--  -->
+            <div class="Test h-[50vh] sm:h-screen bg-slate-900 grid overflow-scroll">
+                <div class="Div h-3/4 m-auto rounded-xl bg-slate-100 text-5xl w-3/4"></div>
+            </div>
+        </article>
+
+        <h1 id="Height" class="p-10 font-bold text-4xl hover:text-slate-400 text-slate-950 uppercase hover:shadow-xl shadow-slate-500 transition-all"> Height </h1>
+        <article class="Prop w-full grid grid-cols-1 sm:grid-cols-2">
+            <!--  -->
+            <div class="Test h-[50vh]  sm:h-screen bg-slate-500 grid">
+                <form class=" w-3/4 h:full sm:h-3/4 m-auto rounded-xl p-3 bg-slate-100 grid place-content-around">
+                    <label class="font-bold text-2xl hover:text-slate-400 text-slate-950 uppercase transition-all"> Item Height </label>
+                    <div>
+                        <select class=" w-3/4 h-fit p-2 m-auto text-xl mt-3 bg-slate-400 hover:text-slate-100 rounded-2xl hover:bg-slate-600 transition-all">
+                            <option value="h-0"> h-0 </option>
+                            <option value="h-1"> h-1 </option>
+                            <option value="h-2"> h-2 </option>
                         </select>
                         <input type="reset" value="APPLY" class="Apply w-3/4 h-fit p-1 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
                     </div>
@@ -130,12 +214,12 @@
                         
                         <input type="reset" value="USE" class="Use w-3/4 h-fit p-1 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all">
                     </div>
-                    <input type="reset" value="RESET" class="w-3/4 h-fit p-2 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all"> 
+                    <input type="reset" value="RESET" data-default="h-3/4"" class="w-3/4 h-fit p-2 m-auto mt-3 text-xl bg-slate-400 rounded-2xl hover:bg-slate-600 hover:text-slate-100 transition-all"> 
                 </form>
             </div>
             <!--  -->
-            <div class="Test h-[50vh] sm:h-screen bg-slate-900 grid">
-                <div class="Div w-3/4 h-3/4 m-auto rounded-xl bg-slate-100"></div>
+            <div class="Test h-[50vh] sm:h-screen bg-slate-900 grid overflow-scroll">
+                <div class="Div w-3/4 m-auto rounded-xl bg-slate-100 text-5xl h-3/4"></div>
             </div>
         </article>
     </section>
@@ -151,6 +235,7 @@
         let Uses = Array.from(document.getElementsByClassName("Use"))
         let Applies = Array.from(document.getElementsByClassName("Apply"))
         let Divs = Array.from(document.getElementsByClassName("Div"))
+        let Forms = Array.from(document.forms)
         Tag.addEventListener("click",()=>{
             Tags.classList.toggle("hidden")
             Tags.classList.toggle("grid")
@@ -186,6 +271,15 @@
             })
         })
 
+        // Reset Default Value
+        /*Forms.forEach((e,index)=>{  
+            let Default = e.lastElementChild.getAttribute("data-default")
+            e.addEventListener("click",()=>{
+                let Class = Divs[index].classList[Divs[index].classList.length-1]
+                Divs[index].classList.remove(Class)
+                Divs[index].classList.add(Default)
+            })
+        })*/
     </script>
 </body>
 </html>
